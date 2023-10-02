@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47,47,47);
+}
+.topnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resetbtn{
+    font-size: 30px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin: 10px 20px;
+}
+.topnav h2{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 20px;
+}
+.head{
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    transition: 0.3s all linear;
+}
+.guessbox{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.box{
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #000;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.area{
+    width: 50%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input[type="number"]{
+    width: 200px;
+    padding: 15px 15px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+.checkbtn{
+    width: 200px;
+    margin: 20px;
+    padding: 15px 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+button:hover{
+    cursor: pointer;
+}
+p{
+    font-size: 35px;
+    padding: 5px;
+    color: #fff;
+}
+
+@media screen and (max-width: 730px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .guessbox{
+        margin-bottom: 100px;
+    }
+    .area{
+        width: 100%;
+    }
+    #area2 p{
+        font-size: 25px;
+        text-align: left;
+    }
+}
